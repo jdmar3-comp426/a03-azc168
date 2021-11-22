@@ -1,4 +1,4 @@
-console.log(sumToString(1,5));
+//console.log(sumToString(1,5));
 
 /**
  *
@@ -13,7 +13,7 @@ console.log(sumToString(1,5));
 export function sumToString(a, b) {
     return '' + a + ' + ' + b + ' = ' + (a+b);
 }
-console.log(getIncreasingArray(3,7));
+//console.log(getIncreasingArray(3,7));
 /**
  *
  * @param {number} startNumber
@@ -33,7 +33,7 @@ export function getIncreasingArray(startNumber, endNumber) {
     }
     return arr;
 }
-console.log(maxAndMin([1,2,3,4,5]));
+//console.log(maxAndMin([1,2,3,4,5]));
 /**
  *
  * @param {number[]} numbers
@@ -49,7 +49,7 @@ export function maxAndMin(numbers) {
         max:maxx
     };
 }
-console.log(countArray([3, 6, 3, 2, 2, 3, 'some', 'hello', 'some', [1, 2]]));
+//console.log(countArray([3, 6, 3, 2, 2, 3, 'some', 'hello', 'some', [1, 2]]));
 /**
  *
  * @param array - An array of any primitive type
