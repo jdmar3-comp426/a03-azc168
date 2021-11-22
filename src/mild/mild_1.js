@@ -45,8 +45,8 @@ export function maxAndMin(numbers) {
     let minn = Math.min(...numbers);
     let maxx = Math.max(...numbers);
     return {
-        min:minn,
-        max:maxx
+        max:maxx,
+        min:minn
     };
 }
 //console.log(countArray([3, 6, 3, 2, 2, 3, 'some', 'hello', 'some', [1, 2]]));
