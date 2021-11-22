@@ -1,5 +1,5 @@
 import {variance} from "./data/stats_helpers.js";
-console.log(getSum([1,2,3]));
+//console.log(getSum([1,2,3]));
 /**
  * Gets the sum of an array of numbers.
  * @param array
@@ -15,7 +15,7 @@ export function getSum(array) {
     return sum;
 }
 
-console.log(getMedian([3,2,5,6,2,7,4,2,7,5]));
+//console.log(getMedian([3,2,5,6,2,7,4,2,7,5]));
 /**
  * Calculates the median of an array of numbers.
  * @param {number[]} array
@@ -33,7 +33,7 @@ export function getMedian(array) {
         return array.length/2 - .5;
     }
 }
-console.log(getStatistics([3,2,4,5,5,5,2,6,7]));
+//console.log(getStatistics([3,2,4,5,5,5,2,6,7]));
 /**
  * Calculates statistics (see below) on an array of numbers.
  * Look at the stats_helper.js file. It does variance which is used to calculate std deviation.
