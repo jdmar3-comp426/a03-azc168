@@ -1,4 +1,4 @@
-console.log(identifyVariable(4));
+//console.log(identifyVariable(4));
 /**
  *
  * @param variable
@@ -14,7 +14,7 @@ export function identifyVariable(variable) {
    };
 }
 
-console.log(identifyArray(['some', 3, [3, 4], false]));
+//console.log(identifyArray(['some', 3, [3, 4], false]));
 /**
  *
  * @param array
@@ -61,7 +61,7 @@ removeKey(obj, 'password');
 export function removeKey(object, key) {
    delete object[key];
 }
-console.log(removeKeyNonDestructive(obj,'password'))
+//console.log(removeKeyNonDestructive(obj,'password'))
 /**
  * Does not mutate the object passed in
  * @param object
@@ -89,7 +89,7 @@ let obj2 = {
    age: 33,
    password: 'pass123'
 };
-console.log(removeKeys(obj2, ['password', 'age']));
+//console.log(removeKeys(obj2, ['password', 'age']));
 /**
  * Remove and return the listed keys. Without mutating the object passed in.
  * @param object
