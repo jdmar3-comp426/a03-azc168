@@ -27,7 +27,7 @@ export const repeatDemo = () => {
 
 };
 
-
+console.log(multiplyBy(2));
 /**************************************************************************
  *
  * Function currying
@@ -41,9 +41,12 @@ export const repeatDemo = () => {
  *   product of num1 and num2.
  */
 export const multiplyBy = (num1) => {
-
+    return helper(num1,5);
 };
 
+export function helper(num1,num2) {
+    return num1 * num2;
+}
 
 /**
  * Use the multiplyBy function to create and export a function named

@@ -83,12 +83,12 @@ export function removeKeyNonDestructive(object, key) {
    removeKey(copy, key);
    return copy;
 }
-let obj2 = {
+/*let obj2 = {
    name: 'Mr. Boss',
    title: 'boss',
    age: 33,
    password: 'pass123'
-};
+};*/
 //console.log(removeKeys(obj2, ['password', 'age']));
 /**
  * Remove and return the listed keys. Without mutating the object passed in.
