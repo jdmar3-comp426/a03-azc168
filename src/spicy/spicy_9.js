@@ -28,9 +28,7 @@ export const repeat = (fn, n, ...params) => {
  *   10 times.
  */
 export const repeatDemo = () => {
-    let param = new Array();
-    param.push("Hello, world!");
-    console.log(repeat(repeat,10,param));
+    repeat((s) => console.log(s), 10, "Hello, world!");
 };
 
 /**************************************************************************
@@ -61,8 +59,8 @@ export const tenTimes = multiplyBy(10);
  * Write and export a function named "tenTimesFifty" which uses the tenTimes
  *   function to multiply 50 by 10 and returns the result.
  */
-export const tenTimesFifty = (tenTimes) => {
-    return (50);
+export const tenTimesFifty = () => {
+    return tenTimes(50);
 };
 
 
