@@ -45,13 +45,9 @@ export const repeatDemo = () => {
  *   parameter "num2". The returned function should calculate and return the
  *   product of num1 and num2.
  */
-export const multiplyBy = (num1) => {
-    return helper(num1,num2);
+export const multiplyBy = (num1) => (num2) => num1 * num2,{
 };
 
-export function helper(num1,num2) {
-    return num1 * num2;
-}
 
 /**
  * Use the multiplyBy function to create and export a function named
