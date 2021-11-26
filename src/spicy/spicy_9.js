@@ -162,7 +162,7 @@ export const someEven = (arr, test) => {
  *       -->  { pass: [1, 5, 31], fail: [90] }
  */
 export const filter = (arr, test) => {
-    for(let i=0;i<arr.length;i++) {
+    /*for(let i=0;i<arr.length;i++) {
         let bool = false;
         if((arr[i]==0) || (arr[i]%2 === 0)){
             continue;
@@ -172,8 +172,8 @@ export const filter = (arr, test) => {
                 return false;
             }
         }
-    }
-    return true;
+    }*/
+    return false;
 };
 
 
