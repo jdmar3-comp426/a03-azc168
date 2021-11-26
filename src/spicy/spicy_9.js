@@ -125,7 +125,18 @@ export const everyEven = (arr, test) => {
  *    someEven([0, 0, 0, 0, 0], x => x === 0)  <--  returns true
  */
 export const someEven = (arr, test) => {
-
+    for(let i=0;i<arr.lengtbh;i++) {
+        let bool = false;
+        if((arr[i]!==0) && (arr[i]%2 === 1)){
+            continue;
+        }else {
+            bool = test(arr[i]);
+            if(bool === true) {
+                return true;
+            }
+        }
+    }
+    return false;
 };
 
 
