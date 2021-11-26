@@ -162,18 +162,20 @@ export const someEven = (arr, test) => {
  *       -->  { pass: [1, 5, 31], fail: [90] }
  */
 export const filter = (arr, test) => {
-    /*for(let i=0;i<arr.length;i++) {
-        let bool = false;
-        if((arr[i]==0) || (arr[i]%2 === 0)){
-            continue;
-        }else {
-            bool = test(arr[i]);
-            if(bool === false) {
-                return false;
-            }
+    let fail = new Array();
+    let pass = new Array();
+    for(let i=0;i<arr.length;i++) {
+        var bool = test(arr[i]);
+        if(bool === false) {
+            fail.push(arr[i]);
+        } else {
+            pass.push(arr[i]);
         }
-    }*/
-    return false;
+    }
+    return {
+        pass:pass,
+        fail:fail
+    };
 };
 
 
