@@ -20,9 +20,9 @@ see under the methods section
  * @param {allCarStats.ratioHybrids} ratio of cars that are hybrids
  */
 export const allCarStats = {
-    avgMpg: getAvgMpg,
-    allYearStats: getYearStats,
-    ratioHybrids: getRatioHybrids,
+    avgMpg: getAvgMpg(),
+    allYearStats: getYearStats(),
+    ratioHybrids: getRatioHybrids(),
 };
 
 export function getAvgMpg(){
