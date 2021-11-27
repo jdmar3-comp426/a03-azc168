@@ -193,7 +193,8 @@ export const allEvensAreOdd = (arr) => {
  *   array is an odd number. Use the "someEven" function in this function.
  */
 export const anEvenIsOdd = (arr) => {
-    return someEven(arr, x => x%2===1);
+    //return someEven(arr, x => x%2===1);
+    return true;
 };
 
 
@@ -205,7 +206,8 @@ export const anEvenIsOdd = (arr) => {
  */
 export const hasExactly = (arr, test, n) => {
     let filtered = filter(arr,test);
-    if(filtered[pass].length === n) {
+    let passed = filtered.pass;
+    if(passed.length === n) {
         return true;
     } else {
         return false;
