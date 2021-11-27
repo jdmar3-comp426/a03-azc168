@@ -22,7 +22,7 @@ see under the methods section
 export const allCarStats = {
     avgMpg: getAvgMpg,
     allYearStats: getYearStats,
-    ratioHybrids: undefined,
+    ratioHybrids: getRatioHybrids,
 };
 
 export function getAvgMpg(){
