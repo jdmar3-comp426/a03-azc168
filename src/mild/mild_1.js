@@ -1,3 +1,5 @@
+//console.log(sumToString(1,5));
+
 /**
  *
  * @param {number} a
@@ -9,10 +11,9 @@
  * see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
  */
 export function sumToString(a, b) {
-
+    return '' + a + ' + ' + b + ' = ' + (a+b);
 }
-
-
+//console.log(getIncreasingArray(3,7));
 /**
  *
  * @param {number} startNumber
@@ -24,9 +25,15 @@ export function sumToString(a, b) {
  *
  */
 export function getIncreasingArray(startNumber, endNumber) {
-
+    let arr = new Array(endNumber-startNumber+1);
+    let idx = 0;
+    for(let i=startNumber; i<=endNumber; i++) {
+        arr[idx] = i;
+        idx++;        
+    }
+    return arr;
 }
-
+//console.log(maxAndMin([1,2,3,4,5]));
 /**
  *
  * @param {number[]} numbers
@@ -35,9 +42,14 @@ export function getIncreasingArray(startNumber, endNumber) {
  * and https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
  */
 export function maxAndMin(numbers) {
-
+    let minn = Math.min(...numbers);
+    let maxx = Math.max(...numbers);
+    return {
+        max:maxx,
+        min:minn
+    };
 }
-
+//console.log(countArray([3, 6, 3, 2, 2, 3, 'some', 'hello', 'some', [1, 2]]));
 /**
  *
  * @param array - An array of any primitive type
@@ -49,5 +61,13 @@ export function maxAndMin(numbers) {
  *
  */
 export function countArray(array) {
-
+    var dict = {};
+    for(let i=0; i<array.length; i++) {
+        if(!(array[i] in dict)) {
+            dict[array[i]] = 1;
+        } else {
+            dict[array[i]]++;
+        }
+    }
+    return dict;
 }
